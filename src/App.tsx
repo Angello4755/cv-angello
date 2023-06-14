@@ -1,25 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { MainLayout } from "./view/layout";
+import "./styles.css";
+import { ThemeProvider } from "@mui/material";
+import { darkTheme } from "./view/themes";
+import { defaultTheme } from "./view/themes/default-theme";
+import { ColorModeContext } from "./view/context/theme/ColorModeContext";
+import { LanguageProvider } from "./view/context/language/LanguageProvider";
 
 function App() {
+  const [mode, setMode] = React.useState<"light" | "dark">("light");
+  const colorMode = React.useMemo(
+    () => ({
+      toggleColorMode: () => {
+        setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
+      },
+    }),
+    []
+  );
+
+  const theme = React.useMemo(
+    () => (mode === "light" ? defaultTheme : darkTheme),
+    [mode]
+  );
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <LanguageProvider>
+      <ColorModeContext.Provider value={colorMode}>
+        <ThemeProvider theme={theme}>
+          <MainLayout />
+        </ThemeProvider>
+      </ColorModeContext.Provider>
+    </LanguageProvider>
   );
 }
 
