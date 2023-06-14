@@ -1,10 +1,9 @@
 import { IconButton } from "@mui/material";
 import { Box, useTheme } from "@mui/system";
-import { theme } from "@nextui-org/react";
 import React, { useContext } from "react";
 import { ColorModeContext } from "../../context/theme/ColorModeContext";
-import Brightness7Icon from '@mui/icons-material/Brightness7';
-import Brightness4Icon from '@mui/icons-material/Brightness4';
+import Brightness7Icon from "@mui/icons-material/Brightness7";
+import Brightness4Icon from "@mui/icons-material/Brightness4";
 
 const ModeTheme = () => {
   const theme = useTheme();
