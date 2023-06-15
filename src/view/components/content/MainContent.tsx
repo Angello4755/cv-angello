@@ -6,7 +6,6 @@ const MainContent = () => {
   return (
     <Box sx={{ marginLeft: "20%" }}>
       <WorkExperience />
-      
     </Box>
   );
 };

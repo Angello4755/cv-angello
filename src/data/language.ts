@@ -1,9 +1,9 @@
+import { workExperience } from "./workExperence";
 
 export type LanguageDictionary = {
     ES: Language,
     FR: Language,
     EN: Language
-
 }
 
 type laguageText = {
@@ -18,13 +18,27 @@ export type Language = {
             languages: string;
             jobTitle: string;
             native: string;
+            workExperience: string;
+            goals: string;
         },
         profile: {
             cellPhone: string;
         },
-        workExperience: {
-            title: string;
-        }    
+        workExperience: DataCompany[]
+}
+
+export type DataCompany = {
+    post: string;
+    initialDate: string;
+    finalDate: string;
+    company: string;
+    pageWeb: string;
+    goals: Goal[]
+}
+
+type Goal = {
+    description: string;
+    technologies: string;
 }
 
 export const languageDictionary: LanguageDictionary  = {
@@ -39,14 +53,14 @@ export const languageDictionary: LanguageDictionary  = {
             language: 'Idioma',
             languages: 'Idiomas',
             jobTitle: 'Software developer (FullStack)',
-            native: 'Idioma nativo'
+            native: 'Idioma nativo',
+            workExperience: 'Experiencia Laboral',
+            goals: 'Logros'
         },
         profile: {
             cellPhone: 'Celular'
         },
-        workExperience: {
-            title: 'Experiencia Laboral'
-        }    
+        workExperience: workExperience.ES  
     },
     FR: {
         key: 'FR',
@@ -59,14 +73,14 @@ export const languageDictionary: LanguageDictionary  = {
             language: 'Langage',
             languages: 'Langages',
             jobTitle: 'Développeur logiciel',
-            native: 'Langue maternelle'
+            native: 'Langue maternelle',
+            workExperience: 'Expérience de travail',
+            goals: 'Buts'
         },
         profile: {
             cellPhone: 'Téléphone portable'
         },
-        workExperience: {
-            title: 'Expérience de travail'
-        }    
+        workExperience: workExperience.ES  
     },
     EN: {
         key: 'EN',
@@ -79,13 +93,14 @@ export const languageDictionary: LanguageDictionary  = {
             language: 'Language',
             languages: 'Langages',
             jobTitle: 'Software developer',
-            native: 'Native'
+            native: 'Native',
+            workExperience: 'Work Esperience',
+            goals: 'Goals'
         },
         profile: {
             cellPhone: 'Cell Phone'
         },
-        workExperience: {
-            title: 'Work Experience'
-        }    
+        workExperience: workExperience.ES   
     }
 }
+
