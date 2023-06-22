@@ -1,16 +1,16 @@
 import { useContext } from "react";
-import { Box, Grid, List, ListItem, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import { LanguageContext } from "../../../context/language/LanguageContex";
-import WorkIcon from "@mui/icons-material/Work";
-import Company from "./company/Company";
+import SchoolIcon from "@mui/icons-material/School";
+import Education from "./education/Education";
 
-const WorkExperience = () => {
+const Educations = () => {
   const { currentLanguage } = useContext(LanguageContext);
 
   return (
     <Box
-      marginLeft={2}
       marginBottom={2}
+      marginLeft={2}
       width="95%"
       borderRadius={2}
       display={{ sm: "none", xl: "flex", backgroundColor: "white" }}
@@ -21,19 +21,20 @@ const WorkExperience = () => {
       flexDirection="column"
     >
       <Box borderRadius={2} marginRight={2} display="flex" flexDirection="row">
-        <WorkIcon color="primary" />
+        <SchoolIcon color="primary" />
         <Typography variant="h6">
-          {currentLanguage.general.workExperience}
+          {currentLanguage.general.education}
         </Typography>
       </Box>
-
-      <Box display="flex" flexDirection="column" width="100%">
-        {currentLanguage.workExperience.map((company) => (
-          <Company dataCompany={company} />
+      <Grid container spacing={0}>
+        {currentLanguage.educations.map((education) => (
+          <Grid item xs={4}>
+            <Education education={education} />
+          </Grid>
         ))}
-      </Box>
+      </Grid>
     </Box>
   );
 };
 
-export default WorkExperience;
+export default Educations;

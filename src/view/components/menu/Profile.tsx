@@ -14,6 +14,7 @@ import { LanguageContext } from "../../context/language/LanguageContex";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import MailIcon from "@mui/icons-material/Mail";
+import FlagIcon from "@mui/icons-material/Flag";
 
 const Profile = () => {
   const { palette } = useTheme();
@@ -78,6 +79,25 @@ const Profile = () => {
         >
           <MailIcon />
         </IconButton>
+      </Box>
+      <Box
+        display="flex"
+        justifyContent="space-around"
+        width="70%"
+        alignContent="center"
+        alignItems="center"
+        textAlign="center"
+      >
+        <Typography
+          variant="subtitle1"
+          sx={{ fontWeight: "bold" }}
+          color={color}
+        >
+          {currentLanguage.general.LabelNationality}:
+        </Typography>
+        <Typography variant="subtitle2" color={color}>
+          {currentLanguage.general.nationality}
+        </Typography>
       </Box>
     </Box>
   );

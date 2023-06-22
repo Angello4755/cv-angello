@@ -53,7 +53,7 @@ const Company: FC<Props> = ({ dataCompany }) => {
                   <BusinessIcon color="primary" />
                 </Box>
                 <Typography
-                  variant="subtitle1"
+                  variant="subtitle1" 
                   sx={{ fontWeight: "bold", textDecoration: "underline" }}
                   color="primary"
                 >

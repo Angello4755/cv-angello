@@ -1,10 +1,12 @@
 import React, { FC } from "react";
-import { Typography } from "@mui/material";
+import { Chip, Typography } from "@mui/material";
 import FlagIcon from "@mui/icons-material/Flag";
+import { TECNOLOGIE } from "../../../../../data/workExperence";
+import FaceIcon from "@mui/icons-material/Face";
 
 type Props = {
   text: string;
-  tecnologies: string;
+  tecnologies: TECNOLOGIE[];
 };
 const Goal: FC<Props> = ({ text, tecnologies }) => {
   return (
@@ -20,7 +22,17 @@ const Goal: FC<Props> = ({ text, tecnologies }) => {
         color="secondary"
       >
         {" "}
-        {tecnologies}
+        {tecnologies.map((chip) => (
+          <Chip
+            label={chip}
+            color="success"
+            size="small"
+            variant="outlined"
+            sx={{
+              marginRight: 0.5,
+            }}
+          />
+        ))}
       </Typography>
     </>
   );

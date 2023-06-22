@@ -1,16 +1,16 @@
 import { useContext } from "react";
-import { Box, Grid, List, ListItem, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { LanguageContext } from "../../../context/language/LanguageContex";
 import WorkIcon from "@mui/icons-material/Work";
-import Company from "./company/Company";
+import Project from "./projects/Project";
 
-const WorkExperience = () => {
+const Projects = () => {
   const { currentLanguage } = useContext(LanguageContext);
 
   return (
     <Box
-      marginLeft={2}
       marginBottom={2}
+      marginLeft={2}
       width="95%"
       borderRadius={2}
       display={{ sm: "none", xl: "flex", backgroundColor: "white" }}
@@ -22,18 +22,15 @@ const WorkExperience = () => {
     >
       <Box borderRadius={2} marginRight={2} display="flex" flexDirection="row">
         <WorkIcon color="primary" />
-        <Typography variant="h6">
-          {currentLanguage.general.workExperience}
-        </Typography>
+        <Typography variant="h6">{currentLanguage.general.projects}</Typography>
       </Box>
-
       <Box display="flex" flexDirection="column" width="100%">
-        {currentLanguage.workExperience.map((company) => (
-          <Company dataCompany={company} />
+        {currentLanguage.projects.map((project) => (
+          <Project project={project} />
         ))}
       </Box>
     </Box>
   );
 };
 
-export default WorkExperience;
+export default Projects;

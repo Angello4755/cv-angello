@@ -1,4 +1,6 @@
-import { workExperience } from "./workExperence";
+import { TECNOLOGIE, workExperience } from "./workExperence";
+import { projects } from './projects';
+import { educations } from "./educations";
 
 export type LanguageDictionary = {
     ES: Language,
@@ -20,11 +22,37 @@ export type Language = {
             native: string;
             workExperience: string;
             goals: string;
+            projects: string;
+            skills: string;
+            LabelNationality: string;
+            nationality: string;
+            education: string;
+            
         },
         profile: {
             cellPhone: string;
         },
-        workExperience: DataCompany[]
+        workExperience: DataCompany[],
+        projects: Project[]
+        educations: Education[]
+}
+
+export type Education = {
+    title: string;
+    initialDate: string;
+    finalDate: string;
+    localization: string;
+    url?: string
+    
+}
+
+export type Project = {
+    name: string;
+    urlDeploy: string;
+    description: string;
+    tecnologies: TECNOLOGIE[]
+    github: string;
+    mainImage: string;
 }
 
 export type DataCompany = {
@@ -36,9 +64,10 @@ export type DataCompany = {
     goals: Goal[]
 }
 
+
 type Goal = {
     description: string;
-    technologies: string;
+    technologies: TECNOLOGIE[];
 }
 
 export const languageDictionary: LanguageDictionary  = {
@@ -55,12 +84,19 @@ export const languageDictionary: LanguageDictionary  = {
             jobTitle: 'Software developer (FullStack)',
             native: 'Idioma nativo',
             workExperience: 'Experiencia Laboral',
-            goals: 'Logros'
+            goals: 'Logros',
+            projects: 'Proyectos',
+            skills: 'Habilidades',
+            LabelNationality: 'Nacionalidad',
+            nationality: 'Colombiano',
+            education: 'Educacion'
         },
         profile: {
             cellPhone: 'Celular'
         },
-        workExperience: workExperience.ES  
+        workExperience: workExperience.ES,
+        projects:  projects.ES,
+        educations: educations.ES 
     },
     FR: {
         key: 'FR',
@@ -75,12 +111,19 @@ export const languageDictionary: LanguageDictionary  = {
             jobTitle: 'Développeur logiciel',
             native: 'Langue maternelle',
             workExperience: 'Expérience de travail',
-            goals: 'Buts'
+            goals: 'Buts',
+            projects: 'Projets',
+            skills: 'Compétences',
+            LabelNationality: 'Nationalité',
+            nationality: 'Colombien',
+            education: 'Éducation'
         },
         profile: {
             cellPhone: 'Téléphone portable'
         },
-        workExperience: workExperience.ES  
+        workExperience: workExperience.FR,
+        projects:  projects.FR,
+        educations: educations.FR 
     },
     EN: {
         key: 'EN',
@@ -95,12 +138,19 @@ export const languageDictionary: LanguageDictionary  = {
             jobTitle: 'Software developer',
             native: 'Native',
             workExperience: 'Work Esperience',
-            goals: 'Goals'
+            goals: 'Goals',
+            projects: 'Projects',
+            skills: 'Skills',
+            LabelNationality: 'Nationality',
+            nationality: 'Colombian',
+            education: 'Education'
         },
         profile: {
             cellPhone: 'Cell Phone'
         },
-        workExperience: workExperience.ES   
+        workExperience: workExperience.EN,
+        projects:  projects.EN,
+        educations: educations.EN  
     }
 }
 
