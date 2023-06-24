@@ -62,23 +62,21 @@ const Company: FC<Props> = ({ dataCompany }) => {
               </IconButton>
             </Tooltip>
           </Box>
-          <div>
-            <Typography variant="body1" sx={{ fontWeight: "bold" }}>
-              {currentLanguage.general.goals}
-            </Typography>
-            <List>
-              <Grid container spacing={2}>
-                {dataCompany.goals.map((goal, index) => (
-                  <Grid item xs={6}>
-                    <Goal
-                      text={goal.description}
-                      tecnologies={goal.technologies}
-                    />
-                  </Grid>
-                ))}
-              </Grid>
-            </List>
-          </div>
+          <Typography variant="body1" sx={{ fontWeight: "bold" }}>
+            {currentLanguage.general.goals}
+          </Typography>
+          <List>
+            <Grid container spacing={2}>
+              {dataCompany.goals.map((goal, index) => (
+                <Grid item xs={12} sm={6} lg={12}>
+                  <Goal
+                    text={goal.description}
+                    tecnologies={goal.technologies}
+                  />
+                </Grid>
+              ))}
+            </Grid>
+          </List>
         </Grid>
       </Grid>
     </Box>
