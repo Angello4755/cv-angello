@@ -15,7 +15,7 @@ const MainMenu = () => {
       marginLeft={2}
       width="19%"
       borderRadius={"20px"}
-      display={{ sm: "none", xl: "block", xs: "none", lg: "block" }}
+      display={{ sm: "none", xl: "block", xs: "none" }}
       position="fixed"
       flexGrow={1}
       height="100%"
