@@ -7,7 +7,10 @@ import WorkExperience from "./module/WorkExperience";
 const MainContent = () => {
   return (
     <>
-      <Box marginLeft={{ sm: "0%", xl: "20%" }}>
+      <Box
+        width={{ sm: "100%", xl: "79%" }}
+        marginLeft={{ sm: "0%", xl: "21%" }}
+      >
         <WorkExperience />
         <Educations />
         <Projects />

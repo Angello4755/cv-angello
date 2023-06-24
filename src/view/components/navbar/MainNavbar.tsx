@@ -7,6 +7,7 @@ const MainNavbar = () => {
       sx={{
         marginBottom: 2,
         height: "10%",
+        width: "100%",
       }}
       position="static"
     >

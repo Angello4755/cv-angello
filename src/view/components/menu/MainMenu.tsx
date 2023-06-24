@@ -13,7 +13,7 @@ const MainMenu = () => {
     <Box
       bgcolor={background}
       marginLeft={2}
-      width="19%"
+      width="20%"
       borderRadius={"20px"}
       display={{ sm: "none", xl: "block", xs: "none" }}
       position="fixed"
