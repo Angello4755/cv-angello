@@ -5,14 +5,12 @@ import ModeTheme from "../modeTheme/ModeTheme";
 import { useContext } from "react";
 import { LanguageContext } from "../../context/language/LanguageContex";
 import Languages from "./Languages";
-import Skills from "./Skills";
+import Skills from "./TechnicalSkills";
+import TechnicalSkills from "./TechnicalSkills";
+import TransversalSkills from "./TransversalSkills";
 
 const MainMenu = () => {
   const theme = useTheme();
-
-  const { changeLanguage } = useContext(LanguageContext);
-
-  console.log(theme);
 
   const background = theme.palette.background.paper;
 
@@ -35,7 +33,9 @@ const MainMenu = () => {
         <Divider light />
         <Languages />
         <Divider light />
-        <Skills />
+        <TechnicalSkills />
+        <Divider light />
+        <TransversalSkills />
       </Box>
     </Box>
   );

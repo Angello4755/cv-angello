@@ -1,12 +1,15 @@
 import React, { FC } from "react";
 import { Chip, Typography } from "@mui/material";
 import FlagIcon from "@mui/icons-material/Flag";
-import { TECNOLOGIE } from "../../../../../data/workExperence";
-import FaceIcon from "@mui/icons-material/Face";
+import {
+  TECHNICALSKILLS,
+  TECNOLOGIE,
+  TRANSVERSALSKILLS,
+} from "../../../../../data/workExperence";
 
 type Props = {
   text: string;
-  tecnologies: TECNOLOGIE[];
+  tecnologies: (TECNOLOGIE | TECHNICALSKILLS | TRANSVERSALSKILLS)[];
 };
 const Goal: FC<Props> = ({ text, tecnologies }) => {
   return (
@@ -30,6 +33,7 @@ const Goal: FC<Props> = ({ text, tecnologies }) => {
             variant="outlined"
             sx={{
               marginRight: 0.5,
+              marginBottom: 0.5,
             }}
           />
         ))}

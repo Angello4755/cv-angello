@@ -1,4 +1,4 @@
-import { TECNOLOGIE, workExperience } from "./workExperence";
+import { TECNOLOGIE, workExperience, TECHNICALSKILLS, TRANSVERSALSKILLS } from './workExperence';
 import { projects } from './projects';
 import { educations } from "./educations";
 
@@ -27,7 +27,8 @@ export type Language = {
             LabelNationality: string;
             nationality: string;
             education: string;
-            
+            transversalSkills: string;
+            technicalSkills: string;
         },
         profile: {
             cellPhone: string;
@@ -67,7 +68,7 @@ export type DataCompany = {
 
 type Goal = {
     description: string;
-    technologies: TECNOLOGIE[];
+    technologies: (TECNOLOGIE | TECHNICALSKILLS | TRANSVERSALSKILLS )[];
 }
 
 export const languageDictionary: LanguageDictionary  = {
@@ -89,7 +90,9 @@ export const languageDictionary: LanguageDictionary  = {
             skills: 'Habilidades',
             LabelNationality: 'Nacionalidad',
             nationality: 'Colombiano',
-            education: 'Educacion'
+            education: 'Educacion',
+            transversalSkills: 'Habilidades transversales',
+            technicalSkills: 'Habilidades tecnicas'
         },
         profile: {
             cellPhone: 'Celular'
@@ -116,7 +119,9 @@ export const languageDictionary: LanguageDictionary  = {
             skills: 'Compétences',
             LabelNationality: 'Nationalité',
             nationality: 'Colombien',
-            education: 'Éducation'
+            education: 'Éducation',
+            transversalSkills: 'Compétences transversales',
+            technicalSkills: 'Compétences techniques'
         },
         profile: {
             cellPhone: 'Téléphone portable'
@@ -143,7 +148,9 @@ export const languageDictionary: LanguageDictionary  = {
             skills: 'Skills',
             LabelNationality: 'Nationality',
             nationality: 'Colombian',
-            education: 'Education'
+            education: 'Education',
+            transversalSkills: 'Transversal skills',
+            technicalSkills: 'Technical skills'
         },
         profile: {
             cellPhone: 'Cell Phone'

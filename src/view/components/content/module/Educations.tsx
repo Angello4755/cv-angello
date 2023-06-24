@@ -13,7 +13,7 @@ const Educations = () => {
       marginLeft={2}
       width="95%"
       borderRadius={2}
-      display={{ sm: "none", xl: "flex", backgroundColor: "white" }}
+      display={{ xl: "flex", backgroundColor: "white" }}
       alignContent="center"
       alignItems="start"
       boxShadow={2}

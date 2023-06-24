@@ -1,19 +1,19 @@
-import { Box, Typography, Chip } from "@mui/material";
+import { Box, Typography, Chip, useTheme } from "@mui/material";
 import React, { useContext } from "react";
-import CodeIcon from "@mui/icons-material/Code";
-import { TECNOLOGIE } from "../../../data/workExperence";
+import { TECHNICALSKILLS } from "../../../data/workExperence";
 import { LanguageContext } from "../../context/language/LanguageContex";
 
-const Skills = () => {
+const TechnicalSkills = () => {
+  const { palette } = useTheme();
+  const color = palette.text.primary;
   const { currentLanguage } = useContext(LanguageContext);
   return (
     <Box marginTop={2}>
-      {" "}
-      <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
-        {currentLanguage.general.skills}:
+      <Typography variant="subtitle1" sx={{ fontWeight: "bold" }} color={color}>
+        {currentLanguage.general.technicalSkills}:
       </Typography>
       <div>
-        {Object.values(TECNOLOGIE).map((tec) => (
+        {Object.values(TECHNICALSKILLS).map((tec) => (
           <Chip
             label={tec}
             color="primary"
@@ -27,4 +27,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default TechnicalSkills;

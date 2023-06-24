@@ -1,11 +1,4 @@
-import {
-  AppBar,
-  Toolbar,
-  Typography,
-  Avatar,
-  Box,
-  IconButton,
-} from "@mui/material";
+import { AppBar, Toolbar, Typography, Avatar, Box } from "@mui/material";
 import Language from "../language/Language";
 import ModeTheme from "../modeTheme/ModeTheme";
 const MainNavbar = () => {
@@ -13,9 +6,6 @@ const MainNavbar = () => {
     <AppBar
       sx={{
         marginBottom: 2,
-        boxShadow: "none",
-        background: "primary",
-        backgroundSize: "cover",
         height: "10%",
       }}
       position="static"

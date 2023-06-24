@@ -1,20 +1,10 @@
-import React from "react";
-import {
-  Avatar,
-  Box,
-  IconButton,
-  Link,
-  Typography,
-  useTheme,
-} from "@mui/material";
-import photo from "../../../assets/photoAngello.png";
+import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { useContext } from "react";
 import { LanguageContext } from "../../context/language/LanguageContex";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import MailIcon from "@mui/icons-material/Mail";
-import FlagIcon from "@mui/icons-material/Flag";
 
 const Profile = () => {
   const { palette } = useTheme();

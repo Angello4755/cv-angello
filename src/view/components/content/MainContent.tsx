@@ -6,11 +6,13 @@ import WorkExperience from "./module/WorkExperience";
 
 const MainContent = () => {
   return (
-    <Box sx={{ marginLeft: "20%" }}>
-      <WorkExperience />
-      <Educations />
-      <Projects />
-    </Box>
+    <>
+      <Box marginLeft={{ sm: "0%", xl: "20%" }}>
+        <WorkExperience />
+        <Educations />
+        <Projects />
+      </Box>
+    </>
   );
 };
 

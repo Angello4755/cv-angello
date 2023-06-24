@@ -19,6 +19,42 @@ export enum TECNOLOGIE {
     JEST_TEST = "JEST_TEST"
 }
 
+
+
+
+export enum TECHNICALSKILLS {
+    CSS = 'Css',
+    HTML = 'Html',
+    JAVASCRIPT = 'JavaScript',
+    REACT = "REACT",
+    TYPESCRIPT = "Typescript",
+    NEXTJS = "NEXTJS",
+    MONGODB = "MONGODB",
+    PLSQL = "PLSQL",
+    MYSQL = "MYSQL",
+    JAVA = "JAVA",
+    JEST_TEST = "JEST_TEST",
+    JESTAXE = 'jest-axe',
+    TEST_LIBRARY = 'Testing Library',
+    WEBSERVICE = "Web Service (XML,Soap)",
+    PHP = "PHP",
+    CODEIGNITER = 'Codeigniter',
+    GIT = 'GIT',
+    GENEXUS = "Genexus (8, 9, 10)",
+    GAMS = "GAMS",
+    SIG = "SIG",
+    WEB_RESPONSIVE = "WEB_RESPONSIVE",
+    REACT_NATIVE = "REACT_NATIVE"
+}
+
+export enum TRANSVERSALSKILLS {
+    WCAG = 'WCAG (Accessibility Guidelines)',
+    TDD = "TDD (Test Driven Development)",
+    HEXAGONALARCHITECTURE = "Hexagonal architecture",
+    SCRUM = "SCRUM",
+    XP =  'XP(Extreme Programming)',
+}
+
 export const workExperience = {
     ES: [{
         post:'Desarrollador de software senior',
@@ -29,7 +65,15 @@ export const workExperience = {
         goals: [
            {
                description: 'Accessibilidad: Adaptacion de las aplicaciones web y mobile para que los usuarios con diferentes discapacidades (Visuales, auditivas) puedan acceder a las diferentes funcionalidades  ',
-               technologies: [ TECNOLOGIE.WCAG, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.JESTAXE, TECNOLOGIE.TDD, TECNOLOGIE.JEST_TEST  ]
+               technologies: [ TRANSVERSALSKILLS.WCAG, TECHNICALSKILLS.HTML, TECHNICALSKILLS.JAVASCRIPT, TECHNICALSKILLS.JESTAXE, TRANSVERSALSKILLS.TDD, TECHNICALSKILLS.JEST_TEST, TECHNICALSKILLS.TEST_LIBRARY, TRANSVERSALSKILLS.SCRUM  ]
+           },
+           {
+            description: 'Web responsive: Adaptacion de las aplicaciones LOW CODE, a diseños que respondan de manera óptima a diferentes disposivos y tamaños de pantalla.',
+            technologies: [ TECHNICALSKILLS.HTML, TECHNICALSKILLS.JAVASCRIPT, TRANSVERSALSKILLS.TDD, TECHNICALSKILLS.JEST_TEST, TECHNICALSKILLS.TEST_LIBRARY, TECHNICALSKILLS.WEB_RESPONSIVE, TRANSVERSALSKILLS.SCRUM  ]
+           },
+           {
+            description: 'Componentes 2.0: Implementacion de react y react native, en la aplicaciones web y mobile LOW CODE',
+            technologies: [ TECHNICALSKILLS.HTML, TECHNICALSKILLS.JAVASCRIPT, TECHNICALSKILLS.REACT, TECHNICALSKILLS.REACT_NATIVE, TRANSVERSALSKILLS.TDD, TECHNICALSKILLS.JEST_TEST, TECHNICALSKILLS.TEST_LIBRARY , TRANSVERSALSKILLS.SCRUM  ]
            }
         ]
     },
@@ -107,7 +151,15 @@ FR: [{
     goals: [
        {
            description: 'Adapter les applications web et mobiles pour que les utilisateurs atteints de différentes incapacités (visuelles, auditives) puissent accéder aux différentes fonctionnalités.',
-           technologies: [ TECNOLOGIE.WCAG, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.JESTAXE, TECNOLOGIE.TDD, TECNOLOGIE.JEST_TEST  ]
+           technologies: [ TRANSVERSALSKILLS.WCAG, TECHNICALSKILLS.HTML, TECHNICALSKILLS.JAVASCRIPT, TECHNICALSKILLS.JESTAXE, TRANSVERSALSKILLS.TDD, TECHNICALSKILLS.JEST_TEST, TECHNICALSKILLS.TEST_LIBRARY, TRANSVERSALSKILLS.SCRUM  ]
+       },
+       {
+        description: "Web responsive : Adaptation des applications LOW CODE à des conceptions qui répondent de manière optimale à différents appareils et tailles d'écran.",
+        technologies: [ TECHNICALSKILLS.HTML, TECHNICALSKILLS.JAVASCRIPT, TRANSVERSALSKILLS.TDD, TECHNICALSKILLS.JEST_TEST, TECHNICALSKILLS.TEST_LIBRARY, TECHNICALSKILLS.WEB_RESPONSIVE, TRANSVERSALSKILLS.SCRUM  ]
+       },
+       {
+        description: 'Composants 2.0 : Implémentation de React et React Native dans les applications web et mobile LOW CODE.',
+        technologies: [ TECHNICALSKILLS.HTML, TECHNICALSKILLS.JAVASCRIPT, TECHNICALSKILLS.REACT, TECHNICALSKILLS.REACT_NATIVE, TRANSVERSALSKILLS.TDD, TECHNICALSKILLS.JEST_TEST, TECHNICALSKILLS.TEST_LIBRARY , TRANSVERSALSKILLS.SCRUM  ]
        }
     ]
 },
@@ -185,7 +237,7 @@ EN: [{
     goals: [
        {
            description: 'Adapting web and mobile applications for users with different disabilities (visual, auditory) to access various functionalities.',
-           technologies: [ TECNOLOGIE.WCAG, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.JESTAXE, TECNOLOGIE.TDD, TECNOLOGIE.JEST_TEST  ]
+           technologies: [ TRANSVERSALSKILLS.WCAG, TECHNICALSKILLS.HTML, TECHNICALSKILLS.JAVASCRIPT, TECHNICALSKILLS.JESTAXE, TRANSVERSALSKILLS.TDD, TECHNICALSKILLS.JEST_TEST, TECHNICALSKILLS.TEST_LIBRARY, TRANSVERSALSKILLS.SCRUM  ]
        }
     ]
 },
@@ -236,6 +288,14 @@ goals: [
        description: 'Electronic Invoicing Project: Daily automatic reporting to DIAN of all required financial documents according to their new resolution',
        technologies: [ TECNOLOGIE.CSS, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.PHP, TECNOLOGIE.PLSQL ]
    },
+   {
+    description: "Responsive web: Adapting LOW CODE applications to designs that respond optimally to different devices and screen sizes.",
+    technologies: [ TECHNICALSKILLS.HTML, TECHNICALSKILLS.JAVASCRIPT, TRANSVERSALSKILLS.TDD, TECHNICALSKILLS.JEST_TEST, TECHNICALSKILLS.TEST_LIBRARY, TECHNICALSKILLS.WEB_RESPONSIVE, TRANSVERSALSKILLS.SCRUM  ]
+   },
+   {
+    description: 'Componentes 2.0: Implementation of React and React Native in LOW CODE web and mobile applications.',
+    technologies: [ TECHNICALSKILLS.HTML, TECHNICALSKILLS.JAVASCRIPT, TECHNICALSKILLS.REACT, TECHNICALSKILLS.REACT_NATIVE, TRANSVERSALSKILLS.TDD, TECHNICALSKILLS.JEST_TEST, TECHNICALSKILLS.TEST_LIBRARY , TRANSVERSALSKILLS.SCRUM  ]
+   }
 ]
 },{
 post:'Junior Software Developer',
