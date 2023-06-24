@@ -1,11 +1,6 @@
-import React from "react";
-import { Box, Button, Divider, useTheme } from "@mui/material";
+import { Box, Divider, useTheme } from "@mui/material";
 import Profile from "./Profile";
-import ModeTheme from "../modeTheme/ModeTheme";
-import { useContext } from "react";
-import { LanguageContext } from "../../context/language/LanguageContex";
 import Languages from "./Languages";
-import Skills from "./TechnicalSkills";
 import TechnicalSkills from "./TechnicalSkills";
 import TransversalSkills from "./TransversalSkills";
 
@@ -20,7 +15,7 @@ const MainMenu = () => {
       marginLeft={2}
       width="19%"
       borderRadius={"20px"}
-      display={{ sm: "none", xl: "block" }}
+      display={{ sm: "none", xl: "block", xs: "none", lg: "block" }}
       position="fixed"
       flexGrow={1}
       height="100%"
