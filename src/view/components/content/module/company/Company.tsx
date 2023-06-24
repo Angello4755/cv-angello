@@ -28,7 +28,7 @@ const Company: FC<Props> = ({ dataCompany }) => {
       width="98%"
     >
       <Grid container spacing={2}>
-        <Grid item xs={2} justifyContent="center">
+        <Grid item xs={12} sm={2} lg={2} justifyContent="center">
           <Typography
             variant="subtitle2"
             sx={{ fontWeight: "bold" }}
@@ -40,7 +40,7 @@ const Company: FC<Props> = ({ dataCompany }) => {
             {dataCompany.initialDate} - {dataCompany.finalDate}
           </Typography>
         </Grid>
-        <Grid item xs={10} width="100%">
+        <Grid item xs={12} sm={10} lg={10} width="100%">
           <Box display="flex" flexDirection="row">
             <Tooltip title={dataCompany.company}>
               <IconButton
@@ -53,7 +53,7 @@ const Company: FC<Props> = ({ dataCompany }) => {
                   <BusinessIcon color="primary" />
                 </Box>
                 <Typography
-                  variant="subtitle1" 
+                  variant="subtitle1"
                   sx={{ fontWeight: "bold", textDecoration: "underline" }}
                   color="primary"
                 >

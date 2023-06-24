@@ -13,7 +13,7 @@ const WorkExperience = () => {
       marginBottom={2}
       width="95%"
       borderRadius={2}
-      display={{ xl: "flex", backgroundColor: "white" }}
+      display="flex"
       alignContent="center"
       alignItems="start"
       boxShadow={2}
@@ -27,7 +27,7 @@ const WorkExperience = () => {
         </Typography>
       </Box>
 
-      <Box display="flex" flexDirection="column" width="100%">
+      <Box width="100%">
         {currentLanguage.workExperience.map((company) => (
           <Company dataCompany={company} />
         ))}
