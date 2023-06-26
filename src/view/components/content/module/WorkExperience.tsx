@@ -28,8 +28,8 @@ const WorkExperience = () => {
       </Box>
 
       <Box width="100%">
-        {currentLanguage.workExperience.map((company) => (
-          <Company dataCompany={company} />
+        {currentLanguage.workExperience.map((company, index) => (
+          <Company key={index} dataCompany={company} />
         ))}
       </Box>
     </Box>

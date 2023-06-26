@@ -134,8 +134,8 @@ export const languageDictionary: LanguageDictionary  = {
         key: 'EN',
         laguages: [  
             { key: 'ES', value: 'Spanish' },
-            { key: 'FR', value: 'English' }, 
-            { key: 'EN', value: 'French' }
+            { key: 'FR', value: 'French' }, 
+            { key: 'EN', value: 'English' }
         ],
         general: {
             language: 'Language',

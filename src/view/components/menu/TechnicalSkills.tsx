@@ -13,8 +13,9 @@ const TechnicalSkills = () => {
         {currentLanguage.general.technicalSkills}:
       </Typography>
       <div>
-        {Object.values(TECHNICALSKILLS).map((tec) => (
+        {Object.values(TECHNICALSKILLS).map((tec, index) => (
           <Chip
+            key={index}
             label={tec}
             color="primary"
             size="small"

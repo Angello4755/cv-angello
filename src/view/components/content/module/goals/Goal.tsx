@@ -25,8 +25,9 @@ const Goal: FC<Props> = ({ text, tecnologies }) => {
         color="secondary"
       >
         {" "}
-        {tecnologies.map((chip) => (
+        {tecnologies.map((chip, index) => (
           <Chip
+            key={index}
             label={chip}
             color="success"
             size="small"

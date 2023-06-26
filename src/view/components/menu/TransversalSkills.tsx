@@ -13,8 +13,9 @@ const TransversalSkills = () => {
         {currentLanguage.general.transversalSkills}:
       </Typography>
       <div>
-        {Object.values(TRANSVERSALSKILLS).map((tec) => (
+        {Object.values(TRANSVERSALSKILLS).map((tec, index) => (
           <Chip
+            key={index}
             label={tec}
             color="default"
             size="small"

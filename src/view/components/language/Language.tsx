@@ -11,6 +11,7 @@ import { LanguageContext } from "../../context/language/LanguageContex";
 
 const Language = () => {
   const { currentLanguage, changeLanguage } = useContext(LanguageContext);
+  
   const [language, setLanguage] = React.useState(currentLanguage.key);
   const handleChange = (event: SelectChangeEvent) => {
     const { value } = event.target;

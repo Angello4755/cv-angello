@@ -68,7 +68,7 @@ const Company: FC<Props> = ({ dataCompany }) => {
           <List>
             <Grid container spacing={2}>
               {dataCompany.goals.map((goal, index) => (
-                <Grid item xs={12} sm={6} lg={6}>
+                <Grid key={index} item xs={12} sm={6} lg={6}>
                   <Goal
                     text={goal.description}
                     tecnologies={goal.technologies}

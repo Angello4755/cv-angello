@@ -28,7 +28,7 @@ const Educations = () => {
       </Box>
       <Grid container spacing={0}>
         {currentLanguage.educations.map((education) => (
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={6} lg={6}>
             <Education education={education} />
           </Grid>
         ))}

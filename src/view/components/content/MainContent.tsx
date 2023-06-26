@@ -8,8 +8,8 @@ const MainContent = () => {
   return (
     <>
       <Box
-        width={{ sm: "100%", xl: "79%" }}
-        marginLeft={{ sm: "0%", xl: "21%" }}
+        width={{ xs: "100%", sm: "100%", xl: "79%", lg: "79%" }}
+        marginLeft={{ xs: "0%", sm: "0%", xl: "21%", lg: "21%" }}
       >
         <WorkExperience />
         <Educations />
