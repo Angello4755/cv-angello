@@ -4,7 +4,7 @@ export const projects = {
     ES: [
     {
         name: 'TESLO SHOP',
-        urlDeploy: 'https://teslo-shop-developer.herokuapp.com/',
+        urlDeploy: 'https://teslo-shop-mu.vercel.app/',
         description: `La aplicación de compra de artículos es una plataforma digital diseñada para facilitar y agilizar el proceso de adquisición de productos a través de web. Esta app proporciona a los usuarios una experiencia de compra conveniente y accesible desde la comodidad de sus hogares o en cualquier lugar donde se encuentren.
         La interfaz de la aplicación es intuitiva y fácil de usar. Los usuarios pueden navegar por una amplia gama de categorías de productos, como ropa para hombre, mujeres y niños. Cada categoría incluye una selección variada de artículos de diferentes marcas y proveedores.
         La aplicación ofrece múltiples funcionalidades para mejorar la experiencia de compra. Algunas de ellas son:
@@ -36,7 +36,7 @@ FR: [
 EN: [
     {
         name: 'TESLO SHOP',
-        urlDeploy: 'https://teslo-shop-developer.herokuapp.com/',
+        urlDeploy: 'https://teslo-shop-mu.vercel.app/',
         description: `The shopping application is a digital platform designed to facilitate and streamline the process of purchasing products through the web. This app provides users with a convenient and accessible shopping experience from the comfort of their homes or anywhere they may be.
         The application interface is intuitive and easy to use. Users can browse through a wide range of product categories, such as men's, women's, and children's clothing. Each category includes a diverse selection of items from different brands and suppliers.
         The application offers multiple functionalities to enhance the shopping experience. Some of them include:

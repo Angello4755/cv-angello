@@ -109,8 +109,8 @@ export const languageDictionary: LanguageDictionary  = {
             { key: 'EN', value: 'Anglais' }
         ],
         general: {
-            language: 'Langage',
-            languages: 'Langages',
+            language: 'Langue',
+            languages: 'Langues',
             jobTitle: 'Développeur logiciel',
             native: 'Langue maternelle',
             workExperience: 'Expérience de travail',
@@ -139,7 +139,7 @@ export const languageDictionary: LanguageDictionary  = {
         ],
         general: {
             language: 'Language',
-            languages: 'Langages',
+            languages: 'Languages',
             jobTitle: 'Software developer',
             native: 'Native',
             workExperience: 'Work Esperience',

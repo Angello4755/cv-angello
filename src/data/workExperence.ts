@@ -231,14 +231,22 @@ goals: [
 EN: [{
     post:'Senior Software Developer',
     initialDate: '01/12/2018',
-    finalDate: 'Actualité',
+    finalDate: 'Present',
     company: 'Veritran',
     pageWeb: "https://www.veritran.com/",
     goals: [
        {
            description: 'Adapting web and mobile applications for users with different disabilities (visual, auditory) to access various functionalities.',
            technologies: [ TRANSVERSALSKILLS.WCAG, TECHNICALSKILLS.HTML, TECHNICALSKILLS.JAVASCRIPT, TECHNICALSKILLS.JESTAXE, TRANSVERSALSKILLS.TDD, TECHNICALSKILLS.JEST_TEST, TECHNICALSKILLS.TEST_LIBRARY, TRANSVERSALSKILLS.SCRUM  ]
-       }
+       },
+       {
+           description: 'Responsive web: Adapting LOW CODE applications to designs that optimally respond to different devices and screen sizes',
+           technologies: [ TECHNICALSKILLS.HTML, TECHNICALSKILLS.JAVASCRIPT, TRANSVERSALSKILLS.TDD, TECHNICALSKILLS.JEST_TEST, TECHNICALSKILLS.TEST_LIBRARY, TECHNICALSKILLS.WEB_RESPONSIVE, TRANSVERSALSKILLS.SCRUM  ]
+       },
+       {
+           description: 'Components 2.0: Implementation of React and React Native in LOW CODE web and mobile applications.',
+           technologies: [ TECHNICALSKILLS.HTML, TECHNICALSKILLS.JAVASCRIPT, TECHNICALSKILLS.REACT, TECHNICALSKILLS.REACT_NATIVE, TRANSVERSALSKILLS.TDD, TECHNICALSKILLS.JEST_TEST, TECHNICALSKILLS.TEST_LIBRARY , TRANSVERSALSKILLS.SCRUM  ]
+       },
     ]
 },
 {
@@ -277,7 +285,7 @@ goals: [
        technologies: [ TECNOLOGIE.CSS, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.PHP, TECNOLOGIE.PLSQL ]
    },
    {
-       description: 'Radius project integrated with ticketing system, enables system improvement in the processes of wireless customer disconnections and reconnections, aiming to reduce the time it takes to perform these actions, thus providing better quality to the customer and additional cost benefits to the company.',
+       description: 'The Radius project integrated with the ticketing system, enables system improvement in the processes of wireless customer disconnections and reconnections, aiming to reduce the time it takes to perform these actions, thus providing better quality to the customer and additional cost benefits to the company.',
        technologies: [ TECNOLOGIE.CSS, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.PHP, TECNOLOGIE.PLSQL ]
    },
    {
@@ -287,14 +295,6 @@ goals: [
    {
        description: 'Electronic Invoicing Project: Daily automatic reporting to DIAN of all required financial documents according to their new resolution',
        technologies: [ TECNOLOGIE.CSS, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.PHP, TECNOLOGIE.PLSQL ]
-   },
-   {
-    description: "Responsive web: Adapting LOW CODE applications to designs that respond optimally to different devices and screen sizes.",
-    technologies: [ TECHNICALSKILLS.HTML, TECHNICALSKILLS.JAVASCRIPT, TRANSVERSALSKILLS.TDD, TECHNICALSKILLS.JEST_TEST, TECHNICALSKILLS.TEST_LIBRARY, TECHNICALSKILLS.WEB_RESPONSIVE, TRANSVERSALSKILLS.SCRUM  ]
-   },
-   {
-    description: 'Componentes 2.0: Implementation of React and React Native in LOW CODE web and mobile applications.',
-    technologies: [ TECHNICALSKILLS.HTML, TECHNICALSKILLS.JAVASCRIPT, TECHNICALSKILLS.REACT, TECHNICALSKILLS.REACT_NATIVE, TRANSVERSALSKILLS.TDD, TECHNICALSKILLS.JEST_TEST, TECHNICALSKILLS.TEST_LIBRARY , TRANSVERSALSKILLS.SCRUM  ]
    }
 ]
 },{
