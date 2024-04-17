@@ -16,7 +16,8 @@ export enum TECNOLOGIE {
     REACT = "REACT",
     MONGODB = "MONGODB",
     TDD = "TDD (Test Driven Development)",
-    JEST_TEST = "JEST_TEST"
+    JEST_TEST = "JEST_TEST",
+    DDD = "DOMAIN-DRIVEN DESING"
 }
 
 
@@ -53,6 +54,9 @@ export enum TRANSVERSALSKILLS {
     HEXAGONALARCHITECTURE = "Hexagonal architecture",
     SCRUM = "SCRUM",
     XP =  'XP(Extreme Programming)',
+    DDD = "Domain-Driven Design",
+    CQRS = "CQRS: Command Query Responsibility Segregation"
+ 
 }
 
 export const workExperience = {

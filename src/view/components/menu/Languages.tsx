@@ -21,7 +21,7 @@ const Languages = () => {
       />
       <Language
         languageText={currentLanguage.laguages[2].value}
-        percentage={35}
+        percentage={65}
         nativeText={currentLanguage.general.native}
       />
 

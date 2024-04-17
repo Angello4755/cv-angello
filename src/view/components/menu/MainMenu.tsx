@@ -25,7 +25,7 @@ const MainMenu = () => {
       flexGrow={1}
       height="100%"
       boxShadow={2}
-      marginTop={6}
+      marginTop={2}
       marginBottom={10}
     >
       <Box height="100%" margin={2}>

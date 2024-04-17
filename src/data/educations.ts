@@ -7,10 +7,28 @@ export const educations = {
         localization: 'Armenia - Quindio - Colombia'
     },
     {
-        title: 'Certificado profesional de desarrollador front-end META',
-        initialDate: '2023',
-        finalDate: 'En progreso',
-        localization: 'Meta (Coursera)'
+        title: 'Domain-Driven Design',
+        initialDate: 'Mar 2024',
+        finalDate: 'Mar 2024',
+        localization: 'Codely'
+    },
+    {
+        title: 'Arquitectura Hexagonal',
+        initialDate: 'Abr 2024',
+        finalDate: 'Abr 2024',
+        localization: 'Codely'
+    },
+    {
+        title: 'CQRS: Command Query Responsibility Segregation',
+        initialDate: 'Abr 2024',
+        finalDate: 'Abr 2024',
+        localization: 'Codely'
+    },
+    {
+        title: 'Modelado del dominio: Eventos de Dominio',
+        initialDate: 'Abr 2024',
+        finalDate: 'Abr 2024',
+        localization: 'Codely'
     },
     {
         title: 'Next.js: El framework de React para producción',
@@ -39,12 +57,30 @@ FR: [
         initialDate: '2008',
         finalDate: '2014',
         localization: 'Armenia - Quindio - Colombia'
-    },    
+    },
     {
-        title: 'Certificat professionnel de développeur META Front-End',
-        initialDate: '2023',
-        finalDate: 'cadeau',
-        localization: 'Meta (Coursera)'
+        title: 'Domain-Driven Design',
+        initialDate: 'Mar 2024',
+        finalDate: 'Mar 2024',
+        localization: 'Codely'
+    },
+    {
+        title: 'Architecture Hexagonale',
+        initialDate: 'Avr 2024',
+        finalDate: 'Avr 2024',
+        localization: 'Codely'
+    },
+    {
+        title: 'CQRS: Command Query Responsibility Segregation',
+        initialDate: 'Avr 2024',
+        finalDate: 'Avr 2024',
+        localization: 'Codely'
+    },
+    {
+        title: 'Modélisation de Domaine : Événements de Domaine',
+        initialDate: 'Avr 2024',
+        finalDate: 'Avr 2024',
+        localization: 'Codely'
     },
     {
         title: 'Next.js: Le framework React pour la production',
@@ -75,10 +111,28 @@ EN: [
         localization: 'Armenia - Quindio - Colombia'
     },
     {
-        title: 'META Front-End Developer Professional Certificate',
-        initialDate: '2023',
-        finalDate: 'In progress',
-        localization: 'Meta (Coursera)'
+        title: 'Domain-Driven Design',
+        initialDate: 'Apr 2024',
+        finalDate: 'Apr 2024',
+        localization: 'Codely'
+    },
+    {
+        title: 'Hexagonal Architecture',
+        initialDate: 'Apr 2024',
+        finalDate: 'Apr 2024',
+        localization: 'Codely'
+    },
+    {
+        title: 'CQRS: Command Query Responsibility Segregation',
+        initialDate: 'Apr 2024',
+        finalDate: 'Apr 2024',
+        localization: 'Codely'
+    },
+    {
+        title: 'Domain Modeling: Domain Events',
+        initialDate: 'Apr 2024',
+        finalDate: 'Apr 2024',
+        localization: 'Codely'
     },
     {
         title: 'Next.js: The React framework for production',
