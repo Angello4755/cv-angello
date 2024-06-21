@@ -13,7 +13,6 @@ const MainContent = () => {
       >
         <WorkExperience />
         <Educations />
-        <Projects />
       </Box>
     </>
   );

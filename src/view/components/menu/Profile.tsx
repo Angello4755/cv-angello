@@ -46,7 +46,7 @@ const Profile = () => {
           <WhatsAppIcon />
         </IconButton>
         <IconButton
-          href="https://www.linkedin.com/in/angello-arredondo-44233762/"
+          href="https://www.linkedin.com/in/angello-ferley-rios-arredondo-44233762/"
           target="_blank"
           rel="noopener"
           aria-label="LinkedIn"

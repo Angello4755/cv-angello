@@ -24,6 +24,8 @@ export enum TECNOLOGIE {
 
 
 export enum TECHNICALSKILLS {
+    JAVA = "JAVA",
+    MICROSERVICES = "Microservicios",
     CSS = 'Css',
     HTML = 'Html',
     JAVASCRIPT = 'JavaScript',
@@ -33,7 +35,6 @@ export enum TECHNICALSKILLS {
     MONGODB = "MONGODB",
     PLSQL = "PLSQL",
     MYSQL = "MYSQL",
-    JAVA = "JAVA",
     JEST_TEST = "JEST_TEST",
     JESTAXE = 'jest-axe',
     TEST_LIBRARY = 'Testing Library',
@@ -45,7 +46,8 @@ export enum TECHNICALSKILLS {
     GAMS = "GAMS",
     SIG = "SIG",
     WEB_RESPONSIVE = "WEB_RESPONSIVE",
-    REACT_NATIVE = "REACT_NATIVE"
+    REACT_NATIVE = "REACT_NATIVE",
+    SPRING_BOOT = "SPRING_BOOT"
 }
 
 export enum TRANSVERSALSKILLS {
@@ -56,7 +58,6 @@ export enum TRANSVERSALSKILLS {
     XP =  'XP(Extreme Programming)',
     DDD = "Domain-Driven Design",
     CQRS = "CQRS: Command Query Responsibility Segregation"
- 
 }
 
 export const workExperience = {
@@ -67,6 +68,10 @@ export const workExperience = {
         company: 'Veritran',
         pageWeb: "https://www.veritran.com/",
         goals: [
+            {
+                description: 'Proceso de refactorización, rediseño y Rearquitectura de un código legacy transaccional, aplicando principios y prácticas modernas para mejorar su calidad y mantenibilidad. El objetivo principal era transformar una base de código obsoleta y difícil de manejar en un sistema robusto y escalable',
+                technologies: [TECHNICALSKILLS.JAVA, TECHNICALSKILLS.SPRING_BOOT, TRANSVERSALSKILLS.DDD, TRANSVERSALSKILLS.HEXAGONALARCHITECTURE]
+            },
            {
                description: 'Accessibilidad: Adaptacion de las aplicaciones web y mobile para que los usuarios con diferentes discapacidades (Visuales, auditivas) puedan acceder a las diferentes funcionalidades  ',
                technologies: [ TRANSVERSALSKILLS.WCAG, TECHNICALSKILLS.HTML, TECHNICALSKILLS.JAVASCRIPT, TECHNICALSKILLS.JESTAXE, TRANSVERSALSKILLS.TDD, TECHNICALSKILLS.JEST_TEST, TECHNICALSKILLS.TEST_LIBRARY, TRANSVERSALSKILLS.SCRUM  ]
@@ -88,6 +93,7 @@ export const workExperience = {
     company: 'Media Commerce SAS',
     pageWeb: "https://mc.net.co/",
     goals: [
+       
        {
            description: 'Maquetacion e implementacion web sistema facturacion',
            technologies: [ TECNOLOGIE.CSS, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.PHP, TECNOLOGIE.PLSQL ]
@@ -153,6 +159,10 @@ FR: [{
     company: 'Veritran',
     pageWeb: "https://www.veritran.com/",
     goals: [
+        {
+            description: "Processus de refactorisation, de refonte et de réarchitecture d'un code legacy transactionnel, en appliquant des principes et des pratiques modernes pour améliorer sa qualité et sa maintenabilité. L'objectif principal était de transformer une base de code obsolète et difficile à gérer en un système robuste et évolutif.",
+            technologies: [TECHNICALSKILLS.JAVA, TECHNICALSKILLS.SPRING_BOOT, TRANSVERSALSKILLS.DDD, TRANSVERSALSKILLS.HEXAGONALARCHITECTURE]
+        },
        {
            description: 'Adapter les applications web et mobiles pour que les utilisateurs atteints de différentes incapacités (visuelles, auditives) puissent accéder aux différentes fonctionnalités.',
            technologies: [ TRANSVERSALSKILLS.WCAG, TECHNICALSKILLS.HTML, TECHNICALSKILLS.JAVASCRIPT, TECHNICALSKILLS.JESTAXE, TRANSVERSALSKILLS.TDD, TECHNICALSKILLS.JEST_TEST, TECHNICALSKILLS.TEST_LIBRARY, TRANSVERSALSKILLS.SCRUM  ]
@@ -239,6 +249,10 @@ EN: [{
     company: 'Veritran',
     pageWeb: "https://www.veritran.com/",
     goals: [
+        {
+            description: "Refactoring, redesign, and re-architecture process of a transactional legacy code, applying modern principles and practices to improve its quality and maintainability. The main objective was to transform an obsolete and difficult-to-manage codebase into a robust and scalable system.",
+            technologies: [TECHNICALSKILLS.JAVA, TECHNICALSKILLS.SPRING_BOOT, TRANSVERSALSKILLS.DDD, TRANSVERSALSKILLS.HEXAGONALARCHITECTURE]
+        },
        {
            description: 'Adapting web and mobile applications for users with different disabilities (visual, auditory) to access various functionalities.',
            technologies: [ TRANSVERSALSKILLS.WCAG, TECHNICALSKILLS.HTML, TECHNICALSKILLS.JAVASCRIPT, TECHNICALSKILLS.JESTAXE, TRANSVERSALSKILLS.TDD, TECHNICALSKILLS.JEST_TEST, TECHNICALSKILLS.TEST_LIBRARY, TRANSVERSALSKILLS.SCRUM  ]
