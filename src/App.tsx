@@ -24,8 +24,6 @@ function App() {
     [mode]
   );
 
-  const About = () => <h1>About Us</h1>;
-
   const Main = () => (
     <LanguageProvider>
       <ColorModeContext.Provider value={colorMode}>

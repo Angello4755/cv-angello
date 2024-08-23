@@ -20,9 +20,6 @@ export enum TECNOLOGIE {
     DDD = "DOMAIN-DRIVEN DESING"
 }
 
-
-
-
 export enum TECHNICALSKILLS {
     JAVA = "JAVA",
     MICROSERVICES = "Microservicios",

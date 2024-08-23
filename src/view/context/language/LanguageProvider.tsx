@@ -1,8 +1,10 @@
-import React, { FC, ReactElement, useReducer } from "react";
+import React, { FC, ReactElement, useEffect, useReducer } from "react";
 import { useParams } from "react-router-dom";
 import { Language, languageDictionary } from "../../../data/language";
 import { LanguageContext } from "./LanguageContex";
 import { LanguageReducer } from "./LanguageReducer";
+import { RepositoryFirebase } from "../../../infraestructure/repositoryFirebase";
+import { Repository} from "../../../domain/repository";
 
 export interface LanguageState {
   currentLanguage: Language;
@@ -16,10 +18,23 @@ interface Props {
   children: ReactElement;
 }
 
+
+
 export const LanguageProvider: FC<Props> = ({ children }) => {
   const { id } = useParams();
-  console.log("LanguageProvider", id, Language_INITIAL_STATE);
-  if (id) {
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const repository: Repository = new RepositoryFirebase();
+      console.log("repository");
+      await repository.save();
+      console.log("fin repo");
+    };
+  
+    fetchData();
+  }, []);
+
+ if (id) {
     switch (id) {
       case "FR":
         Language_INITIAL_STATE.currentLanguage = languageDictionary.FR;
@@ -49,3 +64,5 @@ export const LanguageProvider: FC<Props> = ({ children }) => {
     </LanguageContext.Provider>
   );
 };
+
+

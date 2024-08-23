@@ -1,6 +1,18 @@
 export const educations = {
     ES: [
     {
+        title: 'Master en Cloud Computing (En curso)',
+        initialDate: '2024',
+        finalDate: '2025',
+        localization: 'Immune Technology - Madrid - España'
+    },
+    {
+        title: 'Microservicios en Java, Quarkus y AWS',
+        initialDate: '2024',
+        finalDate: '2024',
+        localization: 'Polyglot'
+    },
+    {
         title: 'Ingeniero en sistemas y computacion',
         initialDate: '2008',
         finalDate: '2014',
@@ -53,6 +65,18 @@ export const educations = {
 ],
 FR: [
     {
+        title: "Master en Cloud Computing (En cours)",
+        initialDate: "2024",
+        finalDate: "2025",
+        localization: "Immune Technology - Madrid - Espagne"
+    },
+    {
+        "title": "Microservices en Java, Quarkus et AWS",
+        "initialDate": "2024",
+        "finalDate": "2024",
+        "localization": "Polyglot"
+    },
+    {
         title: 'Ingénieur système et informatique',
         initialDate: '2008',
         finalDate: '2014',
@@ -104,6 +128,18 @@ FR: [
     }
 ],
 EN: [
+    {
+        title: "Master in Cloud Computing (In progress)",
+        initialDate: "2024",
+        finalDate: "2025",
+        localization: "Immune Technology - Madrid - Spain"
+    },
+    {
+        title: "Microservices in Java, Quarkus, and AWS",
+        initialDate: "2024",
+        finalDate: "2024",
+        localization: "Polyglot"
+    },    
     {
         title: 'Systems and computer engineer',
         initialDate: '2008',
