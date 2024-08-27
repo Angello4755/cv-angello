@@ -97,15 +97,15 @@ export const workExperience = {
        },
        {
            description: 'Modulo especializado reporteria sistema de tickets',
-           technologies: [ TECNOLOGIE.CSS, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.PHP ]
+           technologies: [ TECNOLOGIE.CSS, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.PHP, TECHNICALSKILLS.JAVA ]
        },
        {
            description: 'Modulo especializado reporteria sistema de recaudo y facturacion',
-           technologies: [ TECNOLOGIE.CSS, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.PHP ]
+           technologies: [ TECNOLOGIE.CSS, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.PHP, TECHNICALSKILLS.JAVA ]
        },
        {
            description: 'Dashboard de analisis de informacion de grandes clientes',
-           technologies: [ TECNOLOGIE.CSS, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.PHP ]
+           technologies: [ TECNOLOGIE.CSS, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.PHP, TECHNICALSKILLS.JAVA ]
        },
        {
            description: 'Generación reconocimiento de ingresos(Fr), cálculos correctos de Días de servicio del cliente, calculo automático diario de intereses de mora, tipificación de periodicidad de facturación, tipificación de cuentas contables niif',
@@ -187,15 +187,15 @@ goals: [
    },
    {
        description: 'Module de reporting spécialisé pour le système de gestion des tickets',
-       technologies: [ TECNOLOGIE.CSS, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.PHP ]
+       technologies: [ TECNOLOGIE.CSS, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.PHP, TECHNICALSKILLS.JAVA ]
    },
    {
        description: 'Module de reporting spécialisé pour le système de collecte des revenus et de facturation.',
-       technologies: [ TECNOLOGIE.CSS, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.PHP ]
+       technologies: [ TECNOLOGIE.CSS, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.PHP, TECHNICALSKILLS.JAVA ]
    },
    {
        description: "Tableau de bord pour l'analyse des informations des clients importants",
-       technologies: [ TECNOLOGIE.CSS, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.PHP ]
+       technologies: [ TECNOLOGIE.CSS, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.PHP, TECHNICALSKILLS.JAVA ]
    },
    {
        description: 'Génération de la reconnaissance des revenus, calculs précis des jours de service client, calcul automatique quotidien des intérêts de retard, catégorisation de la périodicité de facturation, catégorisation des comptes comptables conformes aux normes NIIF',
@@ -277,15 +277,15 @@ goals: [
    },
    {
        description: 'Specialized reporting module for the ticketing system',
-       technologies: [ TECNOLOGIE.CSS, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.PHP ]
+       technologies: [ TECNOLOGIE.CSS, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.PHP, TECHNICALSKILLS.JAVA ]
    },
    {
        description: 'Specialized reporting module for the revenue and billing system',
-       technologies: [ TECNOLOGIE.CSS, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.PHP ]
+       technologies: [ TECNOLOGIE.CSS, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.PHP, TECHNICALSKILLS.JAVA ]
    },
    {
        description: 'Dashboard for analyzing information of major clients',
-       technologies: [ TECNOLOGIE.CSS, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.PHP ]
+       technologies: [ TECNOLOGIE.CSS, TECNOLOGIE.HTML, TECNOLOGIE.JAVASCRIPT, TECNOLOGIE.PHP, TECHNICALSKILLS.JAVA ]
    },
    {
        description: 'Generation of revenue recognition, accurate calculations of customer service days, daily automatic calculation of late payment interest, categorization of billing periodicity, categorization of NIIF',
